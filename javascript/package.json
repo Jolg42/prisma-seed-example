@@ -1,0 +1,17 @@
+{
+  "name": "prisma-seed-example",
+  "version": "1.0.0",
+  "scripts": {
+    "seed": "node ./prisma/seed.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/cli": "^2.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.14.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
