@@ -5,9 +5,12 @@ dotenv.config()
 const prisma = new PrismaClient()
 
 async function main() {
+  // To satisfy the unique constraint on email if running the seed multiple times
+  const random = Math.random().toString(36).substring(7)
+  
   const alice = await prisma.user.create({
     data: {
-      email: 'alice@prisma.io',
+      email: `alice${random}@prisma.io`,
       name: 'Alice',
       posts: {
         create: {
@@ -21,7 +24,7 @@ async function main() {
 
   const bob = await prisma.user.create({
     data: {
-      email: 'bob@prisma.io',
+      email: `bob${random}@prisma.io`,
       name: 'Bob',
       posts: {
         create: [
