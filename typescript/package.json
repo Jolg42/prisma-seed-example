@@ -2,7 +2,7 @@
   "name": "prisma-seed-example",
   "version": "1.0.0",
   "scripts": {
-    "seed": "node_modules/.bin/ts-node ./prisma/seed.ts"
+    "seed": "ts-node ./prisma/seed.ts"
   },
   "license": "MIT",
   "devDependencies": {
