@@ -9,8 +9,7 @@
     "@prisma/cli": "^2.14.0"
   },
   "dependencies": {
-    "@prisma/client": "^2.14.0",
-    "dotenv": "^8.2.0"
+    "@prisma/client": "^2.14.0"
   },
   "engines": {
     "node": ">=10.0.0"
